@@ -1,0 +1,28 @@
+PREFIX rdfs:   <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX schema: <https://schema.org/> 
+PREFIX ma:     <https://mediaarts-db.bunka.go.jp/data/property#> 
+PREFIX class:  <https://mediaarts-db.bunka.go.jp/data/class#> 
+ 
+SELECT 
+    ?メディアアート催事 ?ラベル ?開始年月日 ?終了年月日 ?説明文 
+WHERE { 
+    ?メディアアート催事 schema:genre ?ジャンル ; 
+        rdfs:label ?ラベル ; 
+        schema:startDate ?開始年月日 ; 
+        schema:description ?説明文 . 
+    FILTER ( 
+        (?ジャンル = "メディアアート催事" || ?ジャンル = "メディアアート展示・実
+演") && 
+        ( 
+            CONTAINS(LCASE(?ラベル), "水") || 
+            CONTAINS(LCASE(?説明文), "水") || 
+            CONTAINS(LCASE(?ラベル), "water") || 
+            CONTAINS(LCASE(?説明文), "water") || 
+            CONTAINS(LCASE(?ラベル), "ウォーター") || 
+            CONTAINS(LCASE(?説明文), "ウォーター") || 
+      CONTAINS(LCASE(?ラベル), "ウオーター") || 
+      CONTAINS(LCASE(?説明文), "ウオーター") 
+         ) 
+    ) 
+    OPTIONAL { ?メディアアート催事 schema:endDate ?終了年月日 } 
+}
