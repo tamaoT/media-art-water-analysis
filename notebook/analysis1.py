@@ -3,7 +3,7 @@ from collections import Counter
 import MeCab
 
 
-file_path = 'Query (7).csv'#MADBから取得
+file_path = 'Query (7).csv'
 data = pd.read_csv(file_path)
 
 keywords = ["水", "water", "ウォーター", "みず"]
