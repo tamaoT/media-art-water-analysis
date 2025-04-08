@@ -13,7 +13,7 @@ I will extract media art works from the MADB where the title or description cont
 For data collection, I will use SPARQL queries to filter media art events and exhibitions/performances, targeting those that include water-related terms in their labels and genres. Further, I will hypothesize and verify how "water" is used in the context of these works. MeCab will be used to list the frequency and occurrence of the words outlined in 2.8, and from this, I will verify whether the background and intention of how "water" is used align with my hypothesis and examine the trends in the themes.
 
 ### 2.4 Results I
-Query: [sparql/sparql1.rq](sparql/spqrql1.rq)
+Query: [sparql/query1.rq](sparql/query1.rq)
 
 ### 2.5 Hypothesis Based on Results I
 I hypothesize the following words will appear frequently based on the context of "water":
@@ -64,7 +64,7 @@ Extract items from the Media Arts Database (MADB) where the title or description
 Following the same approach as in Analysis 1, data is retrieved using SPARQL queries targeting media art events and exhibitions/performances. The queries filter for items where the label or genre includes "体験" ("experience") or "参加" ("participation"). Additionally, hypotheses are formulated and tested to understand the context in which these terms are used within the works. Terms listed in section 3.8 and their frequent co-occurring words are analyzed using MeCab to enumerate their occurrences. The goal is to verify whether the usage context of these terms aligns with the hypotheses and to identify thematic trends.
 
 ### 3.4 Result I
-Query: [sparql/sparql2.rq](sparql/spqrql2.rq)
+Query: [sparql/query2.rq](sparql/query2.rq)
 
 ### 3.5 Hypotheses Based on Result I
 
@@ -120,7 +120,7 @@ Extract items from MADB where the title or description includes terms related to
 Following the same approach as in Analyses 1 and 2, data is retrieved using SPARQL queries targeting media art events and exhibitions/performances. The queries filter for items where the label or genre includes terms related to "水" ("water") and "体験" ("experience") or "参加" ("participation"). Additionally, hypotheses are formulated and tested to understand the context in which these terms are used within the works. Terms listed in section 4.8 and their frequent co-occurring words are analyzed using MeCab to enumerate their occurrences. The goal is to verify whether the usage context of these terms aligns with the hypotheses and to identify thematic trends.
 
 ### 4.4 Result I
-Query: [sparql/sparql3.rq](sparql/spqrql3.rq)
+Query: [sparql/query.rq](sparql/query3.rq)
 
 ### 4.5 Consideration I Based on Result I
 ① Environment and Nature
