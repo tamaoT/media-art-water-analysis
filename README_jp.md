@@ -75,7 +75,7 @@
  「水」「water」「ウォーター」「ウオーター」と共に登場する名詞を調べ、登場回数の多い順に並べた。
  結果は以下の通りである。
  結果：[data/word_count1.csv](data/word_count1.csv)
- コード：[notebook/analysis1.ipynb](notebook/analysis1.ipynb)
+ コード：[notebook/analysis1.py](notebook/analysis1.py)
 
 ###    　2.9 結果Ⅲを受けての考察Ⅱ  
  登場回数の多いものほど、日時や開催⽅法など業務的な内容を意味する単語が多い。
@@ -151,7 +151,7 @@
 「感覚」「知覚」「感」「覚」「運動」「動」と共に登場する名詞を調べ、登場回数の多い順
 に並べた。結果は以下の通りである。 
 結果：[data/word_count2.csv](data/word_count2.csv)
- コード：[notebook/analysis1.ipynb](notebook/analysis1.ipynb)
+ コード：[notebook/analysis2.py](notebook/analysis2.py)
 
 ### 3.9 結果Ⅲを受けての考察Ⅱ  
 基本的な傾向は、「水」関係の語句と頻出する単語を調べた際のものと合致している。
@@ -220,7 +220,7 @@ MADB 内から、タイトルまたは説明文内に、「水」または「wat
 「水」や「体験」に関連する語句と共に登場する名詞を調べ、登場回数の多い順に並べ
 た。結果は以下の通りである。 
 結果：[data/word_count3.csv](data/word_count3.csv)
-コード：[notebook/analysis1.ipynb](notebook/analysis1.ipynb)
+コード：[notebook/analysis3.py](notebook/analysis3.py)
 
 ### 4.9 結果Ⅲを受けての考察Ⅱ  
 仮説どおり、「映像」(83)「音」(63)は登場回数が多かった。一⽅で、分析１・２で現
