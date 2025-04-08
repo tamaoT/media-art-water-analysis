@@ -46,6 +46,7 @@ Next, I will examine which other nouns were most frequently used in proximity to
 MeCab Results
 I will check the nouns that appeared most often alongside "water" and similar terms and list them by frequency.
 Result:[data/word_count1.csv](data/word_count1.csv)
+Code:[notebook/analysis1.ipynb](notebook/analysis1.ipynb)
 
 
 ### 2.9 Consideration II Based on Results III
@@ -99,6 +100,7 @@ Regarding "動" ("motion"), it was used in diverse contexts beyond "運動" ("mo
 
 To identify the actual nouns that co-occurred with terms related to "感覚" ("sensation") and "運動" ("movement"), morphological analysis was conducted using MeCab. The nouns were listed in order of frequency. The results are available at:​
 Result:[data/word_count2.csv](data/word_count2.csv)
+Code:[notebook/analysis2.ipynb](notebook/analysis2.ipynb)
 
 ### 3.9 Consideration II Based on Result III
 
@@ -121,7 +123,46 @@ Following the same approach as in Analyses 1 and 2, data is retrieved using SPAR
 Query: [sparql/sparql3.rq](sparql/spqrql3.rq)
 
 ### 4.5 Consideration I Based on Result I
-Environment, Nature: Many media art works may aim to make participants realize and address environmental issues related to "水" ("water") through "体験" ("experience"). In Analysis
+① Environment and Nature
+Many media art works likely aim to raise awareness of environmental issues related to “water” by allowing people to experience them directly. In Analysis 1, this theme stood out enough to be considered its own genre.
+
+② Visuals, Sound, and Acoustics
+From Analyses 1 and 2, it became clear that equipment using visuals, sound, and acoustics is extremely common. Therefore, similar results are expected in Analysis 3.
+
+③ Research and Technology
+From Analysis 2, it was evident that scientific and technological tools are often actively used to create experiences. It is thus assumed that words like "research" and "technology" will also frequently appear in Analysis 3, which uses similar criteria.
+
+### 4.6 Hypothesis Testing – Result II
+
+The keywords mentioned in the hypothesis were further searched for within the context of Result I to narrow down the data. The actual search results were observed and the validity of the hypotheses is discussed in section 4.7.
+
+"Environment": 10 out of 63
+
+"Nature": 9 out of 63
+
+"Visual": 20 out of 63
+
+"Sound": 18 out of 63
+
+"Acoustics": 11 out of 63
+
+"Research": 12 out of 63
+
+"Technology": 6 out of 63
+
+### 4.7 Consideration I Based on Results I and II
+
+As expected, "visual" and "sound" were found to be key mediums for both "water"- and "experience"-themed works. On the other hand, words like "environment" and "research," which only appeared frequently for one of the themes, had slightly lower occurrences when both were considered together. This may be due to the ambiguity of what it means to "experience" the "environment," or the difficulty of directly incorporating "research" on water as a central element in the works.
+
+### 4.8 Result III
+
+What kinds of words actually appeared near terms related to “water” or “experience”? Using MeCab, a morphological analyzer, the related nouns were extracted and compiled into a list.
+
+[MeCab Analysis]
+Nouns that appeared together with terms related to "water" and "experience" were identified and sorted in order of frequency. The results are recorded in the file:
+
+Result:[data/word_count3.csv](data/word_count3.csv)
+Code:[notebook/analysis3.ipynb](notebook/analysis3.ipynb)
 
 ### 4.9 Consideration II Based on Result III
 As hypothesized, terms like "映像" (image/video) (83 occurrences) and "音" (sound) (63) appeared frequently. On the other hand, the term "匂い" (smell), which did not appear in Analyses 1 or 2, ranked relatively high with 29 occurrences. This initially suggested a trend in works themed around the sense of smell, but in fact, only two such works existed, so it could not be considered a widespread trend. Additionally, terms like "情報" (information) (44) and "メディア" (media) (39) also made up a large proportion. This is thought to reflect the contemporary context in which information itself has become a familiar element of daily life. Although the Yamaguchi Center for Arts and Media (YCAM) frequently held workshop-style exhibitions, there were no works that directly used "water" as their main theme. The term "水" (water) appeared simply because many of the events included Wednesday in their event dates.
