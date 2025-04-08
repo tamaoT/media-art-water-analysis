@@ -13,6 +13,7 @@ I will extract media art works from the MADB where the title or description cont
 For data collection, I will use SPARQL queries to filter media art events and exhibitions/performances, targeting those that include water-related terms in their labels and genres. Further, I will hypothesize and verify how "water" is used in the context of these works. MeCab will be used to list the frequency and occurrence of the words outlined in 2.8, and from this, I will verify whether the background and intention of how "water" is used align with my hypothesis and examine the trends in the themes.
 
 ### 2.4 Results I
+Query: [sparql/sparql1.rq](sparql/spqrql1.rq)
 
 ### 2.5 Hypothesis Based on Results I
 I hypothesize the following words will appear frequently based on the context of "water":
@@ -44,9 +45,8 @@ Next, I will examine which other nouns were most frequently used in proximity to
 
 MeCab Results
 I will check the nouns that appeared most often alongside "water" and similar terms and list them by frequency.
+Result:[data/word_count1.csv](data/word_count1.csv)
 
-2.9 Consideration II Based on Results III
-The most frequent words tend to refer to operational aspects, such as time and event organization. However, there are also nouns that provide clues about the themes and intentions of the works. In particular, terms like "video" (126), "sound" (102), "music" (64), and "performance" (52) suggest that many works utilized video and sound. In these cases, "water" was not necessarily the central theme, but rather appeared metaphorically in relation to video and sound. An example is: "In the center of the work, the dark water surface is dotted with water drops, and ripples spread out, while delicate sounds envelop the venue in response" (water state 1 / "water state 1" @en, Yamaguchi Center for Arts and Media [YCAM], Media Art Database, 2024.08.09 confirmed).
 
 ### 2.9 Consideration II Based on Results III
 The most frequent words tend to refer to operational aspects, such as time and event organization. However, there are also nouns that provide clues about the themes and intentions of the works. In particular, terms like "video" (126), "sound" (102), "music" (64), and "performance" (52) suggest that many works utilized video and sound. In these cases, "water" was not necessarily the central theme, but rather appeared metaphorically in relation to video and sound. An example is: "In the center of the work, the dark water surface is dotted with water drops, and ripples spread out, while delicate sounds envelop the venue in response" (water state 1 / "water state 1" @en, Yamaguchi Center for Arts and Media [YCAM], Media Art Database, 2024.08.09 confirmed).
@@ -63,6 +63,7 @@ Extract items from the Media Arts Database (MADB) where the title or description
 Following the same approach as in Analysis 1, data is retrieved using SPARQL queries targeting media art events and exhibitions/performances. The queries filter for items where the label or genre includes "体験" ("experience") or "参加" ("participation"). Additionally, hypotheses are formulated and tested to understand the context in which these terms are used within the works. Terms listed in section 3.8 and their frequent co-occurring words are analyzed using MeCab to enumerate their occurrences. The goal is to verify whether the usage context of these terms aligns with the hypotheses and to identify thematic trends.
 
 ### 3.4 Result I
+Query: [sparql/sparql2.rq](sparql/spqrql2.rq)
 
 ### 3.5 Hypotheses Based on Result I
 
@@ -97,7 +98,7 @@ Regarding "動" ("motion"), it was used in diverse contexts beyond "運動" ("mo
 ### 3.8 Result III
 
 To identify the actual nouns that co-occurred with terms related to "感覚" ("sensation") and "運動" ("movement"), morphological analysis was conducted using MeCab. The nouns were listed in order of frequency. The results are available at:​
-
+Result:[data/word_count2.csv](data/word_count2.csv)
 
 ### 3.9 Consideration II Based on Result III
 
@@ -117,6 +118,7 @@ Extract items from MADB where the title or description includes terms related to
 Following the same approach as in Analyses 1 and 2, data is retrieved using SPARQL queries targeting media art events and exhibitions/performances. The queries filter for items where the label or genre includes terms related to "水" ("water") and "体験" ("experience") or "参加" ("participation"). Additionally, hypotheses are formulated and tested to understand the context in which these terms are used within the works. Terms listed in section 4.8 and their frequent co-occurring words are analyzed using MeCab to enumerate their occurrences. The goal is to verify whether the usage context of these terms aligns with the hypotheses and to identify thematic trends.
 
 ### 4.4 Result I
+Query: [sparql/sparql3.rq](sparql/spqrql3.rq)
 
 ### 4.5 Consideration I Based on Result I
 Environment, Nature: Many media art works may aim to make participants realize and address environmental issues related to "水" ("water") through "体験" ("experience"). In Analysis
