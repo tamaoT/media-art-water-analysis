@@ -48,3 +48,73 @@ The most frequent words tend to refer to operational aspects, such as time and e
 
 ### 2.9 Consideration II Based on Results III
 The most frequent words tend to refer to operational aspects, such as time and event organization. However, there are also nouns that provide clues about the themes and intentions of the works. In particular, terms like "video" (126), "sound" (102), "music" (64), and "performance" (52) suggest that many works utilized video and sound. In these cases, "water" was not necessarily the central theme, but rather appeared metaphorically in relation to video and sound. An example is: "In the center of the work, the dark water surface is dotted with water drops, and ripples spread out, while delicate sounds envelop the venue in response" (water state 1 / "water state 1" @en, Yamaguchi Center for Arts and Media [YCAM], Media Art Database, 2024.08.09 confirmed).
+
+## 3. Analysis 2: Media Art Including "Experience" or "Participation" in Titles or Descriptions
+
+### 3.1 Analysis Target
+Type: Media Art (Media Art Events, Media Art Exhibitions/Performances)
+
+### 3.2 Analysis Method
+Extract items from the Media Arts Database (MADB) where the title or description includes "体験" ("experience") or "参加" ("participation"). Label works as "Experiential Media Art" if the title or description contains these terms.
+
+### 3.3 Data Acquisition and Organization Method
+Following the same approach as in Analysis 1, data is retrieved using SPARQL queries targeting media art events and exhibitions/performances. The queries filter for items where the label or genre includes "体験" ("experience") or "参加" ("participation"). Additionally, hypotheses are formulated and tested to understand the context in which these terms are used within the works. Terms listed in section 3.8 and their frequent co-occurring words are analyzed using MeCab to enumerate their occurrences. The goal is to verify whether the usage context of these terms aligns with the hypotheses and to identify thematic trends.
+
+### 3.4 Result I
+
+### 3.5 Hypotheses Based on Result I
+
+Formulate hypotheses regarding the intent behind the use of "体験" ("experience") and "参加" ("participation"). The following terms are expected to frequently co-occur:
+
+Sensation, Perception, Sense, Feeling: Experiencing art inherently involves stimulating the five senses such as sight and hearing. It is considered mainstream to enhance these stimuli through scientific technology.​
+
+Movement, Motion: With the rise of interactive art responding to participants' movements, it is anticipated that many works include the term "運動" ("movement") in their descriptions. Participants' movements reflected in the artwork can impart unique value and significance as records.
+
+### 3.6 Hypothesis Testing - Result II
+
+Further search the keywords mentioned in the hypotheses within Result I to refine the findings. Observe the actual search results to assess the validity of the hypotheses, which will be discussed in section 3.7.
+
+"感覚" ("sensation"): 60 occurrences out of 821
+
+"知覚" ("perception"): 22/821
+
+"感" ("sense") and "覚" ("feeling"): 166/821 each
+
+"運動" ("movement"): 29/821
+
+"動" ("motion"): 273/821
+
+### 3.7 Consideration I Based on Results I and II
+
+Terms related to "感覚" ("sensation") were frequently used in descriptions of works aiming to heighten awareness of the five senses, aligning with the hypothesis. Many works intended to sharpen visual and auditory senses using imagery and sound. Additionally, "ゲーム感覚" ("game-like sensation") and "本の中に入ったような感覚" ("sensation of entering a book") were used metaphorically.​
+
+The number of works containing "運動" ("movement") was lower than hypothesized. However, in most cases, the intent of participants "experiencing" through "movement" matched the hypothesis. For example, an event offered participants the opportunity to experience the benefits of "Gyrokinesis," a dance form derived from yoga for dancers.​
+
+Regarding "動" ("motion"), it was used in diverse contexts beyond "運動" ("movement"), including "振動" ("vibration"), "(身体の)動き" ("(body) movement"), and "(アニメーションの)動き" ("(animation) motion").
+
+### 3.8 Result III
+
+To identify the actual nouns that co-occurred with terms related to "感覚" ("sensation") and "運動" ("movement"), morphological analysis was conducted using MeCab. The nouns were listed in order of frequency. The results are available at:​
+
+
+### 3.9 Consideration II Based on Result III
+
+The basic trends align with those observed when examining terms related to "水" ("water") and frequently co-occurring words. Terms like "映像" ("image") (323 occurrences), "音" ("sound") (285), and "サウンド" ("sound") (81) appeared frequently. Similar to Analysis I, "映像" ("image") appeared more frequently than "音" ("sound") or "音響" ("acoustics") (121), suggesting a prevalence of works focusing on visual stimulation over auditory.​
+
+A notable difference from Analysis I is the frequent occurrence of academic terms such as "研究" ("research") (127), "技術" ("technology") (111), and "開発" ("development") (99). This suggests that in works aiming to make participants re-recognize their "感覚" ("senses") through "体験" ("experience"), the underlying "技術" ("technology") plays a more significant role compared to works involving "水" ("water").​
+
+## 4. Analysis 3: Media Art Including Terms Related to "Water" and "Experience" in Titles or Descriptions
+
+### 4.1 Analysis Target
+Type: Media Art (Media Art Events, Media Art Exhibitions/Performances)
+
+### 4.2 Analysis Method
+Extract items from MADB where the title or description includes terms related to "水" ("water")—such as "水" ("water"), "water," "ウォーター" ("water"), or "ウオーター" ("water")—and "体験" ("experience") or "参加" ("participation").
+
+### 4.3 Data Acquisition and Organization Method
+Following the same approach as in Analyses 1 and 2, data is retrieved using SPARQL queries targeting media art events and exhibitions/performances. The queries filter for items where the label or genre includes terms related to "水" ("water") and "体験" ("experience") or "参加" ("participation"). Additionally, hypotheses are formulated and tested to understand the context in which these terms are used within the works. Terms listed in section 4.8 and their frequent co-occurring words are analyzed using MeCab to enumerate their occurrences. The goal is to verify whether the usage context of these terms aligns with the hypotheses and to identify thematic trends.
+
+### 4.4 Result I
+
+### 4.5 Consideration I Based on Result I
+Environment, Nature: Many media art works may aim to make participants realize and address environmental issues related to "水" ("water") through "体験" ("experience"). In Analysis
